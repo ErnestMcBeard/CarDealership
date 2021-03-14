@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "9ab31ec7-4353-46e1-9868-93486e73032b",
+		"name": "CarDealershipAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/api/car/59d2698c2eaefb1268b69ee5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"car",
+						"59d2698c2eaefb1268b69ee5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/api/car",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"123456\",\r\n\t\"make\": \"Ford\",\r\n\t\"year\": 2019,\r\n\t\"color\": \"Black\",\r\n\t\"price\": 20500,\r\n\t\"hasSunroof\": false,\r\n\t\"isFourWheelDrive\": false,\r\n\t\"hasLowMiles\": true,\r\n\t\"hasPowerWindows\": true,\r\n\t\"hasNavigation\": true,\r\n\t\"hasHeatedSeats\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/car",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44364/api/car/123456",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"car",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"make\": \"\",\r\n\t\"year\": -1,\r\n\t\"color\": \"\",\r\n\t\"price\": -1,\r\n\t\"hasSunroof\": true,\r\n\t\"isFourWheelDrive\": null,\r\n\t\"hasLowMiles\": null,\r\n\t\"hasPowerWindows\": null,\r\n\t\"hasNavigation\": null,\r\n\t\"hasHeatedSeats\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/car/query",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"car",
+						"query"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
